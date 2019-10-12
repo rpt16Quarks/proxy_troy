@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <head>
+
+  </head>
+
+  <body>
+    <div id="app">Matt's comp</div>
+    <div id="root">Alex's comp</div>
+    <div id="product-description">Troy's comp</div>
+    <div id="reviews">Vaishu's comp</div>
+    <script src="/public/react.develompent.js"></script>
+    <script src="/public/react-dom.develompent.js"></script>
+    <script src="http://localhost:3003/app.js"></script>
+    <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+    <script src="http://localhost:3004/app.bundle.js"></script>
+    <script>
+      ReactDOM.render(
+        React.createElement(app),
+        document.getElementById('app')
+      );
+      ReactDOM.render(
+        React.createElement(root),
+        document.getElementById('root')
+      );
+      ReactDOM.render(
+        React.createElement(product-description),
+        document.getElementById('product-description')
+      );
+      ReactDOM.render(
+        React.createElement(reviews),
+        document.getElementById('reviews')
+      );
+    </script>
+  </body>
+</html>
