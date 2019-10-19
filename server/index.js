@@ -8,7 +8,7 @@ const port = 3000
 app.use(express.static('public'))
 app.use(express.static(path.join(__dirname, 'public'))); 
 
-app.use('/description', proxy(`http://localhost3002`,{
+app.use('/description', proxy(`http://localhost:3002`,{
   proxyReqPathResolver: function (req) {
     var prod = req.url.split('?');
     var pram = prod[1]
