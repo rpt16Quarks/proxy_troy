@@ -17,7 +17,7 @@ app.use('/description', proxy(`http://localhost3002`,{
   }
 }))
 
-app.use('/reviews', proxy('http://localhose:3004', {
+app.use('/reviews', proxy('http://localhost:3004', {
   proxyReqPathResolver: function (req) {
     var prod = req.url.split('?');
     var pram = prod[1]
