@@ -8,15 +8,18 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "server": "node server/index.js"
+    "server": "nodemon server/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^1.19.3",
+    "express-http-proxy": "^1.6.0",
+    "nodemon": "^1.19.4",
+    "query-string": "^6.8.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "http-proxy-middleware": "^0.20.0"
   }
 }

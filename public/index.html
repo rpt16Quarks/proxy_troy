@@ -4,17 +4,18 @@
   </head>
 
   <body>
-    <div id="app">Matt's comp</div>
+    <h2>Proxy Server</h2>
+    <div id="Gallery">Matt's comp</div>
     <div id="root">Alex's comp</div>
     <div id="product-description">Troy's comp</div>
     <div id="reviews">Vaishu's comp</div>
-    <script src="/public/react.develompent.js"></script>
-    <script src="/public/react-dom.develompent.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3001/bundle.js"></script>
-    <script src="http://localhost:3002/bundle.js"></script>
-    <script src="http://localhost:3004/app.bundle.js"></script>
-    <script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script type="text/javascript" src="http://localhost:3003/app.js"></script>
+    <script type="text/javascript" src="http://localhost:3001/bundle.js"></script>
+    <script type="text/javascript" src="http://localhost:3002/bundle.js"></script>
+    <script type="text/javascript" src="http://localhost:3004/app.bundle.js"></script>
+    <!-- <script>
       ReactDOM.render(
         React.createElement(app),
         document.getElementById('app')
@@ -31,6 +32,6 @@
         React.createElement(reviews),
         document.getElementById('reviews')
       );
-    </script>
+    </script> -->
   </body>
 </html>
